@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="./images/JNTUK logo.png"></a>
+            <h1>Jawaharlal Nehru Technological University Kakinada</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About us.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">SignUp</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About</h1>
+</section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>This website is useful for all JNTUK affiliated colleges.<br>Developed by UCEN students.</h3>
+                <p>Exam cell automator is used to automate result analysis,seating allocation.
+                    To eliminate the need of manual paper-based work,the system seeks to save time and resources.</p>
+                    <a href="" class="hero-btn red-btn">Read More</a>
+        </div>
+        <div class="about-col">
+            <img src="./images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg">
+        </div>
+    </div>
+</section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

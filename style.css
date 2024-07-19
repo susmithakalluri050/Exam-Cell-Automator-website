@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./images/paul-volkmer-fX-qWsXl5x8-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+}
+nav img{
+    width:75px
+}
+h1{
+    text-align: center;
+    color:#fff;
+    font-size: 50px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background:#FFDD95;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding:12px 34px;
+    font-size:13px;
+    background: transparent;
+    border-radius: 25px;
+}
+.btn:hover{
+    border:1px solid #FFDD95;
+    background:#FFDD95;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .header h1{
+        font-size: 20px;
+    }
+
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position:absolute;
+        background: #f44336;
+        height:100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        font-size:22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+    .btn{
+        padding: 10px;;
+        flex-direction: column;
+    
+    }
+}
+
+.footer{
+    width:100%;
+    text-align: center;
+    padding:30px 0;
+}
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight: 600;
+}
+.sub-header{
+    height: 50vh;
+    width:100%;
+    background-image:url("./images/tom-morel-ktVazL5c7FM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width:100%;
+    height:auto;
+}
+.about-col h3{
+    padding-top: 0;
+
+}
+.about-col p{
+    flex:1;
+    margin:left;
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border:1px solid #f44336;
+    text-decoration: none;
+    background: transparent;
+    color:#f44336;
+    padding: 12px 34px;
+}
+.red-btn:hover{
+    border:1px solid #FFDD95;
+    background:aqua;
+    transition: 1s;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.resultanalysis{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.sub-header2{
+    height: 50vh;
+    width:100%;
+    background-image:url("./images/pawel-czerwinski-RmMCdS-Nh74-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.sub-header h1{
+    font-size: 20px;
+}
+.login-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./images/joshua-woroniecki-TspYRqQrErc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.wrapper{
+    width:420px;
+    background: transparent;
+    border:2px solid rgba(255,255,255, .2);
+    color:#fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin:auto;
+    backdrop-filter: blur(10px);
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+
+}
+.wrapper .input-box{
+    position:relative;
+    width:90%;
+    right:70px;
+    height: 30px;
+    margin: 60px;
+}
+.input-box input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:#fff;
+    padding:20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color:#fff;
+}
+.input-box i{
+    position: absolute;
+    top:60%;
+    right:5px;
+    transform: translate((-50%));
+    font-size: 20px;
+}
+.wrapper .remember{
+    display:flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin:-15px 0 15px;
+}
+.remember label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember a{
+    color:#fff;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.wrapper .lbtn{
+    width:100%;
+    height:45px;
+    background:#fff;
+    border:none;
+    outline:none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color:#333;
+}
+.wrapper .signup-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.signup-link p a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.signup-link p a:hover{
+    text-decoration: underline;
+}
+@media(max-width:700px){
+    .login-header h1{
+        font-size: 20px;
+    }
+    .wrapper{
+        flex-direction: column;
+        font-size: 20px;
+        width:auto;
+    }
+    .login-header{
+        flex-direction: column;
+    }
+}
+.signup-header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("./images/felix-besombes-F7E2_IQZu9k-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+}
